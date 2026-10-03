@@ -107,8 +107,8 @@ $total_sum = 0;
 $row_sums = array_fill(0, $rows, 0);
 $col_sums = array_fill(0, $cols, 0);
 
-$diag1_sum = 0; // Main diagonal
-$diag2_sum = 0; // Anti diagonal
+$diag1_sum = 0; 
+$diag2_sum = 0; 
 
 $min_val = $matrix[0][0];
 $max_val = $matrix[0][0];
@@ -174,8 +174,6 @@ echo "<tr><td colspan='5'><b>Total odd elements = $odd_count</b></td></tr>";
 // Total even elements
 echo "<tr><td colspan='5'><b>Total even elements = $even_count</b></td></tr>";
 
-// Row 1 Matrix Output (Top Row with Diagonals & Column sum/Corner)
-// Corner cell (diag1 sum), Col sums, Corner cell (diag2 sum)
 echo "<tr style='background-color: #888; color: white;'>";
 echo "<td><b>$diag1_sum</b></td>";
 for ($j = 0; $j < $cols; $j++) {
@@ -184,18 +182,16 @@ for ($j = 0; $j < $cols; $j++) {
 echo "<td><b>$diag2_sum</b></td>";
 echo "</tr>";
 
-// Matrix Data Rows with Row Sums
 for ($i = 0; $i < $rows; $i++) {
     echo "<tr>";
-    echo "<td><b>{$row_sums[$i]}</b></td>"; // Row Sum (left)
+    echo "<td><b>{$row_sums[$i]}</b></td>"; 
     for ($j = 0; $j < $cols; $j++) {
-        echo "<td>{$matrix[$i][$j]}</td>"; // Array elements
+        echo "<td>{$matrix[$i][$j]}</td>"; 
     }
-    echo "<td><b>{$row_sums[$i]}</b></td>"; // Row Sum (right)
+    echo "<td><b>{$row_sums[$i]}</b></td>"; 
     echo "</tr>";
 }
 
-// Bottom Row with Diagonals & Column sum
 echo "<tr style='background-color: #888; color: white;'>";
 echo "<td><b>$diag2_sum</b></td>";
 for ($j = 0; $j < $cols; $j++) {
@@ -204,23 +200,17 @@ for ($j = 0; $j < $cols; $j++) {
 echo "<td><b>$diag1_sum</b></td>";
 echo "</tr>";
 
-// Total all elements
 echo "<tr><td colspan='5'><b>Total all elements = $total_sum</b></td></tr>";
 
-// Min element position
 $min_pos_str = implode(", ", $min_pos);
 $min_count = count($min_pos);
 echo "<tr><td colspan='5'>Min element is: $min_val in $min_count positions:<br>$min_pos_str</td></tr>";
 
-// Max element position
 $max_pos_str = implode(", ", $max_pos);
 $max_count = count($max_pos);
 echo "<tr><td colspan='5'>Maximum element is: $max_val in $max_count positions:<br>$max_pos_str</td></tr>";
 
 echo "</table>";
-
-
-
 
 echo "<br>";
 
@@ -249,6 +239,7 @@ echo "</table>";
 echo "<br>";
 echo "<h2 style='color: blue;'>Question 5: Student Transcript</h2>";
 
+
 //5. Array of student transcript based on semesters (1,2,3)
     $Semester  = array(
         "Semester 1" => array("Course" => "Mathematics", "CW1" => "10", "Midterm" => "30", "CW2" => "15", "Final" => "40", "Total" => "95", "Status" => "Pass"),
@@ -274,3 +265,5 @@ foreach ($Semester as $semester => $details) {
     echo "</tr>";
 }
 echo "</table>";
+
+?>
