@@ -1,7 +1,7 @@
 <?php
 
 echo "<h1 style='color: white; background-color: green; padding: 10px; text-align: center;'>HOME WORK,WEEK TWO PHP</h1>";
-
+echo "<h2 style= 'background-color: Purple; padding: 6px; color: white; text-align: center; '>Student Information:   Name: Mohamed Mukhtar Isak,      ID: C1230042,        Class: CA234</h2>";
 //Array of one dimension, initialize it to the following values
 $Array = [5, -7, 12, 10, -7, 11, -6, 12, 1, -7, 2, 9];
 

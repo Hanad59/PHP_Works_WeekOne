@@ -147,3 +147,6 @@
                     <p>If you have any questions, feel free to reach out to us at <a href="mailto:support@school.com" class="text-decoration-none">support@school.com</a>.</p>
                 </section>
             </main>
+
+            </div>
+    </div>

@@ -1,5 +1,4 @@
-</div>
-    </div>
+
 
     <!-- Footer -->
     <footer class="text-center py-3">
